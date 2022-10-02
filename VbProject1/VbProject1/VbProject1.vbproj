@@ -72,11 +72,30 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Cases.Designer.vb">
+      <DependentUpon>Cases.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cases.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -94,13 +113,43 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Vaccines.Designer.vb">
+      <DependentUpon>Vaccines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vaccines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteers.Designer.vb">
+      <DependentUpon>Volunteers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteers.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cases.resx">
+      <DependentUpon>Cases.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vaccines.resx">
+      <DependentUpon>Vaccines.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volunteers.resx">
+      <DependentUpon>Volunteers.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
